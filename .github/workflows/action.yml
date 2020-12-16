@@ -31,6 +31,5 @@ jobs:
           PHONE: ${{ secrets.PHONE }}
           PASSWORD: ${{ secrets.PASSWORD }}
           SCKEY: ${{ secrets.SCKEY }}
-          PUSHPLUSTK: ${{secrets.PUSHPLUSTK}}
         run: |
           python3 action.py ${PHONE} ${PASSWORD} -s ${SCKEY}
